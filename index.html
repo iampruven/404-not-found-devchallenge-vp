@@ -27,69 +27,67 @@
       body {
         font-family: "Poppins", sans-serif;
       }
-
-      ul {
-        padding-left: 24px;
+      .aligning {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
       }
-
-      li {
-        margin-bottom: 8px;
+      @media only screen and (max-width: 600px) {
+        .aligning {
+        display: flex;
+        flex-direction: column;
+        justify-content: center
       }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
+}
+      img[src^="Scarecrow.png"]{
+        width:50%;
+        height:100%;
       }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
+      .centering{
+        display:flex;
+        justify-content: center;
       }
-
-      .welcome-text p {
-        font-size: 1rem;
+      .btn{
+        border: solid gray 1px;
+        background-color: gray;
         font-weight: 400;
+        width:200px;
+        height:40px;
+        border-radius:2%;
+        color:white;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19)
       }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
+      .btn:hover{
+        opacity: 0.9;
       }
     </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+    <header>
+      <p>404 Not Found</p>
+    </header>
+    <main>
+      <section class="aligning">
+        <div class="centering">
+          <img src="Scarecrow.png" alt="bad page scarecrow" />
+        </div>
+        <div>
+          <div>
+            <h1>I have bad news for you</h1>
+          </div>
+          <div>
+            <p>
+              The page you are looking for may have been removed or is
+              temporarily unavailable.
+            </p>
+          </div>
+          <div>
+            <button class="btn">Go Back</button>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+    <footer class="centering">iampruven @ DevChallenges.io</footer>
   </body>
 </html>
