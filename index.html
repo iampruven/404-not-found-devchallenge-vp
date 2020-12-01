@@ -26,6 +26,7 @@
     <style>
       body {
         font-family: "Poppins", sans-serif;
+
       }
       .aligning {
         display: flex;
@@ -34,31 +35,45 @@
       }
       @media only screen and (max-width: 600px) {
         .aligning {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .bottoming {
+          bottom:0;
+          position: absolute;
+          /* clear: both; */
+        }
+      }
+      img[src^="Scarecrow.png"] {
+        width: 50%;
+        height: 100%;
+      }
+      .centering {
         display: flex;
-        flex-direction: column;
-        justify-content: center
-      }
-}
-      img[src^="Scarecrow.png"]{
-        width:50%;
-        height:100%;
-      }
-      .centering{
-        display:flex;
         justify-content: center;
       }
-      .btn{
+      .btn {
         border: solid gray 1px;
         background-color: gray;
         font-weight: 400;
-        width:200px;
-        height:40px;
-        border-radius:2%;
-        color:white;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19)
+        width: 200px;
+        height: 40px;
+        border-radius: 2%;
+        color: white;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
       }
-      .btn:hover{
+      .btn:hover {
         opacity: 0.9;
+      }
+      .bottoming {
+        bottom:0;
+        position: absolute;
+        /* clear: both; */
+      }
+      .footing {
+        display: flex;
+        justify-content: center;
       }
     </style>
   </head>
@@ -88,6 +103,8 @@
       </section>
     </main>
 
-    <footer class="centering">iampruven @ DevChallenges.io</footer>
+    <footer class="footing">
+      <p class="bottoming">iampruven @ DevChallenges.io</p>
+    </footer>
   </body>
 </html>
