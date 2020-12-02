@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
 
-    <title>Devchallenges</title>
+    <title>404 Not Found DevChallenges</title>
 
     <style>
       body {
@@ -32,7 +32,9 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin-top:100px;
       }
+
       @media only screen and (max-width: 600px) {
         .aligning {
           display: flex;
@@ -42,7 +44,6 @@
         .bottoming {
           bottom:0;
           position: absolute;
-          /* clear: both; */
         }
       }
       img[src^="Scarecrow.png"] {
@@ -62,6 +63,7 @@
         border-radius: 2%;
         color: white;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+        margin-top:50px;
       }
       .btn:hover {
         opacity: 0.9;
@@ -75,6 +77,14 @@
         display: flex;
         justify-content: center;
       }
+      .text-distance{
+        line-height: 2;
+        width:70%;
+        margin-top:50px;
+      }
+      .spacing{
+        margin-left:20px;
+      }
     </style>
   </head>
   <body>
@@ -86,12 +96,12 @@
         <div class="centering">
           <img src="Scarecrow.png" alt="bad page scarecrow" />
         </div>
-        <div>
+        <div class="spacing">
           <div>
             <h1>I have bad news for you</h1>
           </div>
           <div>
-            <p>
+            <p class="text-distance">
               The page you are looking for may have been removed or is
               temporarily unavailable.
             </p>
